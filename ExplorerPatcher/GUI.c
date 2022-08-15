@@ -3645,6 +3645,7 @@ static LRESULT CALLBACK GUI_WindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPAR
     }
     else if (uMsg == WM_KEYDOWN)
     {
+        printf("wParam:%d", wParam);
         _this->bRebuildIfTabOrderIsEmpty = FALSE;
         if (wParam == VK_ESCAPE)
         {
